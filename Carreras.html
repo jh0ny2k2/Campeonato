@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campeonato S2000 - Inicio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./js/script.js"></script>
+</head>
+<body class="bg-gray-200 font-sans">
+  <nav class="bg-blue-900 shadow-lg">
+    <div class="max-w-6xl mx-auto px-4 ">
+        <div class="flex justify-between">
+            <!-- Logo -->
+            <div class="flex space-x-7">
+                <a href="#" class="flex items-center py-4 px-2">
+                    <img src="img/Imagen_de_WhatsApp_2024-12-05_a_las_00.06.44_591a7bff-removebg-preview.png" class="w-20" alt="">
+            </div>
+
+            <!-- Primary Navbar items -->
+            <div class="hidden md:flex items-center space-x-1">
+                <a href="#" class="py-4 px-2 text-white font-semibold hover:text-blue-500 transition duration-300 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    Inicio
+                </a>
+                <a href="#" class="py-4 px-2 text-white font-semibold hover:text-blue-500 transition duration-300 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0H5a2 2 0 002-2m-4 2h2m14-4l-4-4m4 4v4m0 0h-4m4 0h2m-14-4l4-4m-4 4h4m-4 0v4" />
+                    </svg>
+                    Carreras
+                </a>
+                <a href="#" class="py-4 px-2 text-white font-semibold hover:text-blue-500 transition duration-300 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                    </svg>
+                    Clasificación
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" onclick="toggleMobileMenu()">
+                    <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="hidden mobile-menu md:hidden">
+        <ul class="">
+            <li class="active"><a href="Index.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+                Inicio
+            </a></li>
+            <li><a href="Carreras.html" class="block text-sm px-2 text-white py-4 hover:bg-blue-500 transition duration-300 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0H5a2 2 0 002-2m-4 2h2m14-4l-4-4m4 4v4m0 0h-4m4 0h2m-14-4l4-4m-4 4h4m-4 0v4" />
+                </svg>
+                Carreras
+            </a></li>
+            <li><a href="inicio.html" class="block text-sm px-2 py-4 text-white hover:bg-blue-500 transition duration-300 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+                Clasificación
+            </a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+    </script>
+</nav>
+    
+    <!-- SLIDER -->
+    <div class="relative w-full h-96 overflow-hidden">
+        <div class="slider flex transition-all duration-500 ease-in-out">
+            <img src="./img/2.jpg" alt="Slide 1" class="w-full h-96 object-cover">
+            <img src="./img/3.jpg" alt="Slide 2" class="w-full h-96 object-cover">
+            <img src="./img/4.webp" alt="Slide 3" class="w-full h-96 object-cover">
+        </div>
+    </div>
+
+    <!-- INFORMACION -->
+    <section id="informacion" class="py-20 bg-gray-100">
+
+
+        <div class="container mx-auto p-8">
+            <div class="grid grid-cols-2 gap-4">
+              <!-- Imagen 1 -->
+              <a href="willow.html">
+                <div class="bg-gray-300 h-86 flex items-center rounded-xl justify-center border border-gray-400 overflow-hidden">
+                    <img src="img/willow.png" class="w-full h-full object-cover" alt="">
+                </div>
+              </a>
+              <!-- Imagen 2 -->
+              <a href="brands.html">
+                <div class="bg-gray-300 h-86 flex items-center rounded-xl justify-center border border-gray-400 overflow-hidden">
+                    <img src="img/brandshatch.png" class="w-full h-full object-cover" alt="">
+                  </div>
+              </a>
+              <!-- Imagen 3 -->
+              <a href="tokyo.html">
+                <div class="bg-gray-300 h-86 flex items-center rounded-xl justify-center border border-gray-400 overflow-hidden">
+                    <img src="img/tokyo.png" class="w-full h-full object-cover" alt="">
+                  </div>
+              </a>
+              <!-- Imagen 4 -->
+              <a href="watkins.html">
+                <div class="bg-gray-300 h-86 flex items-center rounded-xl justify-center border border-gray-400 overflow-hidden">
+                    <img src="img/watkins.png" class="w-full h-full object-cover" alt="">
+                  </div>
+              </a>
+
+              <a href="sardegna.html">
+                <div class="bg-gray-300 h-86 flex items-center rounded-xl justify-center border border-gray-400 overflow-hidden">
+                    <img src="img/sardegna.png" class="w-full h-full object-cover" alt="">
+                  </div>
+              </a>
+              <!-- Imagen 4 -->
+              <a href="kyoto.htmls">
+                <div class="bg-gray-300 h-86 flex items-center rounded-xl justify-center border border-gray-400 overflow-hidden">
+                    <img src="img/kyoto.png" class="w-full h-full object-cover" alt="">
+                  </div>
+              </a>
+            </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-5 text-center">
+            <p>&copy; 2024 <a href="https://github.com/jh0ny2k2">Jh0ny2k2</a>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>

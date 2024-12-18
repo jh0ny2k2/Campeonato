@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campeonato S2000 - Inicio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./js/script.js"></script>
+</head>
+<body class="bg-gray-200 font-sans">
+
+  <nav class="bg-blue-900 shadow-lg">
+    <div class="max-w-6xl mx-auto px-4 ">
+        <div class="flex justify-between">
+            <!-- Logo -->
+            <div class="flex space-x-7">
+                <a href="#" class="flex items-center py-4 px-2">
+                    <img src="img/Imagen_de_WhatsApp_2024-12-05_a_las_00.06.44_591a7bff-removebg-preview.png" class="w-20" alt="">
+            </div>
+
+            <!-- Primary Navbar items -->
+            <div class="hidden md:flex items-center space-x-1">
+                <a href="#" class="py-4 px-2 text-white font-semibold hover:text-blue-500 transition duration-300 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    Inicio
+                </a>
+                <a href="#" class="py-4 px-2 text-white font-semibold hover:text-blue-500 transition duration-300 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0H5a2 2 0 002-2m-4 2h2m14-4l-4-4m4 4v4m0 0h-4m4 0h2m-14-4l4-4m-4 4h4m-4 0v4" />
+                    </svg>
+                    Carreras
+                </a>
+                <a href="#" class="py-4 px-2 text-white font-semibold hover:text-blue-500 transition duration-300 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                    </svg>
+                    Clasificación
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" onclick="toggleMobileMenu()">
+                    <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="hidden mobile-menu md:hidden">
+        <ul class="">
+            <li class="active"><a href="Index.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+                Inicio
+            </a></li>
+            <li><a href="Carreras.html" class="block text-sm px-2 text-white py-4 hover:bg-blue-500 transition duration-300 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0H5a2 2 0 002-2m-4 2h2m14-4l-4-4m4 4v4m0 0h-4m4 0h2m-14-4l4-4m-4 4h4m-4 0v4" />
+                </svg>
+                Carreras
+            </a></li>
+            <li><a href="inicio.html" class="block text-sm px-2 py-4 text-white hover:bg-blue-500 transition duration-300 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+                Clasificación
+            </a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+    </script>
+</nav>
+    
+
+      <div class="w-full min-h-screen bg-gray-200 p-5 sm:p-10 md:p-20">
+        <h1 class="text-3xl font-bold text-center uppercase mb-8">Tabla de Clasificación</h1>
+    
+        <!-- Cabecera de la tabla -->
+        <div class="hidden md:grid grid-cols-5 font-bold text-gray-600 text-sm uppercase border-b-2 border-t-2 border-gray-300 py-3">
+            <span class="text-center border-r-2 border-gray-300">Posición</span>
+            <span class="text-center border-r-2 border-gray-300">Equipo</span>
+            <span class="text-center border-r-2 border-gray-300">Jugador</span>
+            <span class="text-center border-r-2 border-gray-300">Hoy</span>
+            <span class="text-center">Total</span>
+        </div>
+        
+        <!-- Filas de la tabla -->
+        <div class="space-y-5 mt-5">
+            <!-- Fila 1 -->
+            <div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+                <div class="flex justify-center items-center">
+                    <span class="text-xl font-bold">1</span>
+                </div>
+                <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+                    <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+                </div>
+                <div class="md:block hidden">
+                    <span class="font-bold">Jmooreno</span>
+                </div>
+                <div class="flex justify-between md:justify-center md:block">
+                    <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+                    <span class="text-xl font-bold">3</span>
+                </div>
+                <div class="flex justify-between md:justify-center md:block">
+                    <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+                    <span class="text-xl font-bold">34</span>
+                </div>
+            </div>
+    
+            <!-- Fila 2 -->
+            <div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+                <div class="flex justify-center items-center">
+                    <span class="text-xl font-bold">2</span>
+                </div>
+                <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+                    <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+                </div>
+                <div class="md:block hidden">
+                    <span class="font-bold">Jmooreno</span>
+                </div>
+                <div class="flex justify-between md:justify-center md:block">
+                    <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+                    <span class="text-xl font-bold">3</span>
+                </div>
+                <div class="flex justify-between md:justify-center md:block">
+                    <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+                    <span class="text-xl font-bold">34</span>
+                </div>
+            </div>
+    
+            <!-- Fila 3 -->
+            <div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+                <div class="flex justify-center items-center">
+                    <span class="text-xl font-bold">3</span>
+                </div>
+                <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+                    <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+                </div>
+                <div class="md:block hidden">
+                    <span class="font-bold">Jmooreno</span>
+                </div>
+                <div class="flex justify-between md:justify-center md:block">
+                    <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+                    <span class="text-xl font-bold">3</span>
+                </div>
+                <div class="flex justify-between md:justify-center md:block">
+                    <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+                    <span class="text-xl font-bold">34</span>
+                </div>
+            </div>
+
+            <!-- Fila 3 -->
+            <div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+              <div class="flex justify-center items-center">
+                  <span class="text-xl font-bold">4</span>
+              </div>
+              <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+                  <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+              </div>
+              <div class="md:block hidden">
+                  <span class="font-bold">Jmooreno</span>
+              </div>
+              <div class="flex justify-between md:justify-center md:block">
+                  <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+                  <span class="text-xl font-bold">3</span>
+              </div>
+              <div class="flex justify-between md:justify-center md:block">
+                  <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+                  <span class="text-xl font-bold">34</span>
+              </div>
+          </div>
+
+          <!-- Fila 3 -->
+          <div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+            <div class="flex justify-center items-center">
+                <span class="text-xl font-bold">5</span>
+            </div>
+            <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+                <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+            </div>
+            <div class="md:block hidden">
+                <span class="font-bold">Jmooreno</span>
+            </div>
+            <div class="flex justify-between md:justify-center md:block">
+                <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+                <span class="text-xl font-bold">3</span>
+            </div>
+            <div class="flex justify-between md:justify-center md:block">
+                <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+                <span class="text-xl font-bold">34</span>
+            </div>
+        </div>
+
+        <!-- Fila 3 -->
+        <div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+          <div class="flex justify-center items-center">
+              <span class="text-xl font-bold">6</span>
+          </div>
+          <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+              <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+          </div>
+          <div class="md:block hidden">
+              <span class="font-bold">Jmooreno</span>
+          </div>
+          <div class="flex justify-between md:justify-center md:block">
+              <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+              <span class="text-xl font-bold">3</span>
+          </div>
+          <div class="flex justify-between md:justify-center md:block">
+              <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+              <span class="text-xl font-bold">34</span>
+          </div>
+      </div>
+
+      <!-- Fila 3 -->
+      <div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+        <div class="flex justify-center items-center">
+            <span class="text-xl font-bold">7</span>
+        </div>
+        <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+            <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+        </div>
+        <div class="md:block hidden">
+            <span class="font-bold">Jmooreno</span>
+        </div>
+        <div class="flex justify-between md:justify-center md:block">
+            <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+            <span class="text-xl font-bold">3</span>
+        </div>
+        <div class="flex justify-between md:justify-center md:block">
+            <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+            <span class="text-xl font-bold">34</span>
+        </div>
+    </div>
+
+    <!-- Fila 3 -->
+    <div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+      <div class="flex justify-center items-center">
+          <span class="text-xl font-bold">8</span>
+      </div>
+      <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+          <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+      </div>
+      <div class="md:block hidden">
+          <span class="font-bold">Jmooreno</span>
+      </div>
+      <div class="flex justify-between md:justify-center md:block">
+          <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+          <span class="text-xl font-bold">3</span>
+      </div>
+      <div class="flex justify-between md:justify-center md:block">
+          <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+          <span class="text-xl font-bold">34</span>
+      </div>
+  </div>
+
+  <!-- Fila 3 -->
+  <div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+    <div class="flex justify-center items-center">
+        <span class="text-xl font-bold">9</span>
+    </div>
+    <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+        <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+    </div>
+    <div class="md:block hidden">
+        <span class="font-bold">Jmooreno</span>
+    </div>
+    <div class="flex justify-between md:justify-center md:block">
+        <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+        <span class="text-xl font-bold">3</span>
+    </div>
+    <div class="flex justify-between md:justify-center md:block">
+        <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+        <span class="text-xl font-bold">34</span>
+    </div>
+</div>
+
+<!-- Fila 3 -->
+<div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+  <div class="flex justify-center items-center">
+      <span class="text-xl font-bold">10</span>
+  </div>
+  <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+      <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+  </div>
+  <div class="md:block hidden">
+      <span class="font-bold">Jmooreno</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+      <span class="text-xl font-bold">3</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+      <span class="text-xl font-bold">34</span>
+  </div>
+</div>
+
+<!-- Fila 3 -->
+<div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+  <div class="flex justify-center items-center">
+      <span class="text-xl font-bold">11</span>
+  </div>
+  <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+      <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+  </div>
+  <div class="md:block hidden">
+      <span class="font-bold">Jmooreno</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+      <span class="text-xl font-bold">3</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+      <span class="text-xl font-bold">34</span>
+  </div>
+</div>
+
+<!-- Fila 3 -->
+<div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+  <div class="flex justify-center items-center">
+      <span class="text-xl font-bold">12</span>
+  </div>
+  <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+      <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+  </div>
+  <div class="md:block hidden">
+      <span class="font-bold">Jmooreno</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+      <span class="text-xl font-bold">12</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+      <span class="text-xl font-bold">34</span>
+  </div>
+</div>
+
+<!-- Fila 3 -->
+<div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+  <div class="flex justify-center items-center">
+      <span class="text-xl font-bold">13</span>
+  </div>
+  <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+      <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+  </div>
+  <div class="md:block hidden">
+      <span class="font-bold">Jmooreno</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+      <span class="text-xl font-bold">3</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+      <span class="text-xl font-bold">34</span>
+  </div>
+</div>
+
+<!-- Fila 3 -->
+<div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+  <div class="flex justify-center items-center">
+      <span class="text-xl font-bold">14</span>
+  </div>
+  <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+      <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+  </div>
+  <div class="md:block hidden">
+      <span class="font-bold">Jmooreno</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+      <span class="text-xl font-bold">3</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+      <span class="text-xl font-bold">34</span>
+  </div>
+</div>
+
+<!-- Fila 3 -->
+<div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+  <div class="flex justify-center items-center">
+      <span class="text-xl font-bold">15</span>
+  </div>
+  <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+      <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+  </div>
+  <div class="md:block hidden">
+      <span class="font-bold">Jmooreno</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+      <span class="text-xl font-bold">3</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+      <span class="text-xl font-bold">34</span>
+  </div>
+</div>
+<!-- Fila 3 -->
+<div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+  <div class="flex justify-center items-center">
+      <span class="text-xl font-bold">16</span>
+  </div>
+  <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+      <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+  </div>
+  <div class="md:block hidden">
+      <span class="font-bold">Jmooreno</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+      <span class="text-xl font-bold">3</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+      <span class="text-xl font-bold">34</span>
+  </div>
+</div>
+<!-- Fila 3 -->
+<div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+  <div class="flex justify-center items-center">
+      <span class="text-xl font-bold">17</span>
+  </div>
+  <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+      <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+  </div>
+  <div class="md:block hidden">
+      <span class="font-bold">Jmooreno</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+      <span class="text-xl font-bold">3</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+      <span class="text-xl font-bold">34</span>
+  </div>
+</div>
+<!-- Fila 3 -->
+<div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+  <div class="flex justify-center items-center">
+      <span class="text-xl font-bold">18</span>
+  </div>
+  <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+      <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+  </div>
+  <div class="md:block hidden">
+      <span class="font-bold">Jmooreno</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+      <span class="text-xl font-bold">3</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+      <span class="text-xl font-bold">34</span>
+  </div>
+</div>
+<!-- Fila 3 -->
+<div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+  <div class="flex justify-center items-center">
+      <span class="text-xl font-bold">19</span>
+  </div>
+  <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+      <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+  </div>
+  <div class="md:block hidden">
+      <span class="font-bold">Jmooreno</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+      <span class="text-xl font-bold">3</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+      <span class="text-xl font-bold">34</span>
+  </div>
+</div>
+<!-- Fila 3 -->
+<div class="grid md:grid-cols-5 grid-cols-1 text-center items-center bg-gray-500 border-2 border-gray-900 rounded-lg p-5 w-full">
+  <div class="flex justify-center items-center">
+      <span class="text-xl font-bold">20</span>
+  </div>
+  <div class="flex items-center justify-center md:justify-start md:col-span-1 mb-5">
+      <img src="./img/S2000_LM_Race_Car__Front_-removebg-preview.png" alt="Red Car" class="h-12 w-20 mr-3">
+  </div>
+  <div class="md:block hidden">
+      <span class="font-bold">Jmooreno</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Última Carrera:</span>
+      <span class="text-xl font-bold">3</span>
+  </div>
+  <div class="flex justify-between md:justify-center md:block">
+      <span class="md:hidden font-bold text-gray-800 uppercase mr-2">Total:</span>
+      <span class="text-xl font-bold">34</span>
+  </div>
+</div>
+
+        </div>
+    </div>
+
+        <!-- FOOTER -->
+        <footer class="bg-gray-900 text-white py-8">
+          <div class="max-w-7xl mx-auto px-5 text-center">
+              <p>&copy; 2024 <a href="https://github.com/jh0ny2k2">Jh0ny2k2</a>. Todos los derechos reservados.</p>
+          </div>
+      </footer>
+    
+
+</body>
+</html>

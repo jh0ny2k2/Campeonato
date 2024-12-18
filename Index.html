@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campeonato S2000 - Inicio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./js/script.js"></script>
+</head>
+<body class="bg-gray-200 font-sans">
+  <nav class="bg-blue-900 shadow-lg">
+    <div class="max-w-6xl mx-auto px-4 ">
+        <div class="flex justify-between">
+            <!-- Logo -->
+            <div class="flex space-x-7">
+                <a href="#" class="flex items-center py-4 px-2">
+                    <img src="img/Imagen_de_WhatsApp_2024-12-05_a_las_00.06.44_591a7bff-removebg-preview.png" class="w-20" alt="">
+            </div>
+
+            <!-- Primary Navbar items -->
+            <div class="hidden md:flex items-center space-x-1">
+                <a href="#" class="py-4 px-2 text-white font-semibold hover:text-blue-500 transition duration-300 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    Inicio
+                </a>
+                <a href="#" class="py-4 px-2 text-white font-semibold hover:text-blue-500 transition duration-300 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0H5a2 2 0 002-2m-4 2h2m14-4l-4-4m4 4v4m0 0h-4m4 0h2m-14-4l4-4m-4 4h4m-4 0v4" />
+                    </svg>
+                    Carreras
+                </a>
+                <a href="#" class="py-4 px-2 text-white font-semibold hover:text-blue-500 transition duration-300 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                    </svg>
+                    Clasificación
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden flex items-center">
+                <button class="outline-none mobile-menu-button" onclick="toggleMobileMenu()">
+                    <svg class="w-6 h-6 text-gray-500" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="hidden mobile-menu md:hidden">
+        <ul class="">
+            <li class="active"><a href="Index.html" class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+                Inicio
+            </a></li>
+            <li><a href="Carreras.html" class="block text-sm px-2 text-white py-4 hover:bg-blue-500 transition duration-300 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0H5a2 2 0 002-2m-4 2h2m14-4l-4-4m4 4v4m0 0h-4m4 0h2m-14-4l4-4m-4 4h4m-4 0v4" />
+                </svg>
+                Carreras
+            </a></li>
+            <li><a href="inicio.html" class="block text-sm px-2 py-4 text-white hover:bg-blue-500 transition duration-300 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+                Clasificación
+            </a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMobileMenu() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
+    </script>
+</nav>
+    
+    <!-- SLIDER -->
+    <div class="relative w-full h-96 overflow-hidden">
+        <div class="slider flex transition-all duration-500 ease-in-out">
+            <img src="./img/2.jpg" alt="Slide 1" class="w-full h-96 object-cover">
+            <img src="./img/3.jpg" alt="Slide 2" class="w-full h-96 object-cover">
+            <img src="./img/4.webp" alt="Slide 3" class="w-full h-96 object-cover">
+        </div>
+    </div>
+
+    <!-- INFORMACION -->
+    <section id="informacion" class="py-20 bg-gray-100">
+
+
+        <div class="max-w-7xl mx-auto px-5 text-center">
+            <div class="flex justify-center items-center px-4">
+                <div class="bg-white shadow-xl rounded-3xl p-8 mb-10 w-full ">
+                    <h2 class="text-4xl font-extrabold mb-10 text-gray-900">Proxima Carrera</h2>
+                    <div class="flex flex-col sm:flex-row items-center justify-center mb-6 space-x-0 sm:space-x-6">
+                        <img src="./img/willow.webp" alt="Circuito" class="w-24 h-24 rounded-lg mb-4 sm:mb-0">
+                        <div class="text-center sm:text-left">
+                            <h2 class="text-3xl font-extrabold text-gray-900">Willow Springs - Big Willow</h2>
+                            <p class="text-lg text-gray-600">Fecha de la carrera: 06/02/2025</p>
+                        </div>
+                    </div>
+                    <div class="border-t border-gray-200 pt-6 mt-6">
+                        <p class="text-lg text-gray-700"><strong>Longitud del circuito:</strong> 3951 m</p>
+                        <p class="text-lg text-gray-700"><strong>Nº de vueltas:</strong> 25</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+            <div class="bg-white shadow-lg rounded-3xl p-8 mb-10">
+                <h2 class="text-4xl font-bold mb-10 text-gray-900">¿Qué es el Campeonato de Gran Turismo 7?</h2>
+                <p class="text-gray-700 text-lg leading-relaxed mb-10">El campeonato online de Gran Turismo 7 es una competición para los amantes de la velocidad y la precisión. Participa y demuestra tus habilidades en la pista contra los mejores pilotos en línea.</p>
+            </div>
+            
+            <div class="bg-white shadow-md rounded-3xl p-8 mb-10">
+                <h2 class="text-4xl font-extrabold mb-8 text-gray-900">Reglamento del Campeonato</h2>
+                <p class="text-gray-700 text-lg leading-relaxed">El campeonato consta de 6 carreras de aproximadamente 40 minutos de duración y una sesión de clasificación de 10 minutos. Se dispone de 14 plazas que se cubrirán por orden de inscripción. Los participantes que no logren una plaza inicial quedarán en lista de reserva.</p>
+                <p class="text-gray-700 text-lg leading-relaxed mt-5">El coche protagonista será el S2000 LM Race Car con un diseño único para todos los participantes, cambiando únicamente el color y el dorsal. Los colores se asignarán por sorteo.</p>
+                <p class="text-gray-700 text-lg leading-relaxed mt-5">Las carreras se llevarán a cabo los jueves a las 22:30, con la sala abierta a las 22:00 para resolver posibles problemas de conexión. La hora límite para solucionar problemas será las 22:30.</p>
+                
+                <a href="/mnt/data/Reglamento_Cup-S2000.pdf" download class="mt-10 inline-block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Descargar Reglamento en PDF</a>
+            </div>
+            
+            <div class="bg-white shadow-lg rounded-3xl p-8">
+                <h2 class="text-4xl font-extrabold mb-8 text-gray-900">Sistema de Puntuación</h2>
+            
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-yellow-500">Posiciones de Carrera</h3>
+                        <ul class="text-gray-700 text-lg leading-relaxed list-disc list-inside">
+                            <li><span class="font-bold text-gray-900">1er lugar:</span> 24 puntos</li>
+                            <li><span class="font-bold text-gray-900">2do lugar:</span> 20 puntos</li>
+                            <li><span class="font-bold text-gray-900">3er lugar:</span> 18 puntos</li>
+                            <li><span class="font-bold text-gray-900">4to lugar:</span> 14 puntos</li>
+                            <li><span class="font-bold text-gray-900">5to lugar:</span> 12 puntos</li>
+                            <li><span class="font-bold text-gray-900">6to lugar:</span> 10 puntos</li>
+                            <li><span class="font-bold text-gray-900">7mo lugar:</span> 8 puntos</li>
+                            <li><span class="font-bold text-gray-900">8vo lugar:</span> 6 puntos</li>
+                            <li><span class="font-bold text-gray-900">9no lugar:</span> 4 puntos</li>
+                            <li><span class="font-bold text-gray-900">10mo lugar:</span> 2 puntos</li>
+                            <li><span class="font-bold text-gray-900">11mo lugar:</span> 1 punto</li>
+                        </ul>
+                    </div>
+            
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-4 text-yellow-500">Puntos Adicionales</h3>
+                        <ul class="text-gray-700 text-lg leading-relaxed list-disc list-inside">
+                            <li><span class="font-bold text-gray-900">3 puntos</span> por pole position</li>
+                            <li><span class="font-bold text-gray-900">2 puntos</span> por vuelta rápida</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-7xl mx-auto px-5 text-center">
+            <p>&copy; 2024 <a href="https://github.com/jh0ny2k2">Jh0ny2k2</a>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        const slider = document.querySelector('.slider');
+        const nextSlide = document.getElementById('next-slide');
+        const prevSlide = document.getElementById('prev-slide');
+        let currentIndex = 0;
+        const totalSlides = slider.children.length;
+
+        nextSlide.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        });
+
+        prevSlide.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        });
+    </script>
+
+</body>
+</html>
